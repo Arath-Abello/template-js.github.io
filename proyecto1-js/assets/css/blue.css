@@ -1,0 +1,38 @@
+body {
+    background-image: url('../img/cielo.jpg');
+    background-attachment: fixed;
+    /*determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor. En este caso, Si fixed es especificado, la imagen de fondo estará fija en la pantalla y no se moverá con el bloque contenedor.
+    
+    Si scroll es especificado, la imagen de fondo se moverá dentro de la pantalla junto al bloque que la contiene.*/
+}
+div#logo{
+    background-color: #1F87C4;
+}
+nav#menu ul li a:hover{
+    background-color: #1F87C4;
+}
+article.post a.button-more{
+    background-color:#1F87C4;
+}
+a.top{
+    background-color: #1F87C4;
+}
+a#logout{
+    background-color: #1F87C4;
+}
+form input[type="submit"] {
+    background-color: #1F87C4;
+    color: white;
+}
+.ui-accordion .ui-accordion-header{
+    background-color: #1f88c4c5;
+    color: white;
+}
+.ui-accordion .ui-accordion-header-active{
+    background-color: #1F87C4;
+    color: white;
+}
+.ui-accordion .ui-accordion-content{
+    background-color: #1f88c4c5;
+    color: white;
+}

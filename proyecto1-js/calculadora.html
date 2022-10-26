@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1 con js</title>
+
+    <!-- mi css -->
+    <link rel="stylesheet" href="assets/css/calculadora.css">
+    <link id="theme" rel="stylesheet" href="assets/css/green.css">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <!-- mi js -->
+    <script src="./assets/js/calculadora.js"></script>
+
+</head>
+
+<body>
+    <div id="selector-theme">
+        <div id="to-green">
+            <i class="fa-solid fa-image fa-2xl green"></i>
+        </div>
+        <div id="to-red">
+            <i class="fa-solid fa-image fa-2xl red"></i>
+        </div>
+        <div id="to-blue">
+            <i class="fa-solid fa-image fa-2xl blue"></i>
+        </div>
+    </div>
+
+    <div id="global">
+        <!-- inicio cabecera -->
+        <header>
+            <div id="logo">
+                <h1>PROYECTO JS</h1>
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="reloj.html">RELOJ</a></li>
+                    <li><a href="about.html">SOBRE MI</a></li>
+                    <li><a href="calculadora.html">CALCULADORA</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- fin cabecera -->
+
+
+
+        <!-- inicio contneido -->
+        <main>
+           
+            <!-- div donde irá la calculadora -->
+            <div id="appcalc">
+                <!-- es importante ponerle un nombre al form ya veremos porque -->
+                <!-- dentro del form estaran todos los inputs de la calculadora -->
+                <form name="calculadora">
+                    <!-- desactivamos el autocompletado y que sea solo lectura y lo desactivamos para que no se pueda clickear-->
+                    <input type="text" name="respuesta" value="" autocomplete="off" readonly disabled>
+
+                    <!-- procedemos a estructurar la calculadora -->
+                    <!-- necesitamos colocar el boton clicado en el input text para eso usaremos el evento onclick en cada input y dentro obtenemos el valor del textfield usando document.el name de nuestro form.el nombre de nuestro input textfield y punto value y le concatenamos el valor que tiene el elemento clicado en este caso es el 7 y como vemos cada vez que clickeamos se pone el elemento en el textfield -->
+                    <input type="button" value="7" onclick="document.calculadora.respuesta.value+='7'">
+                    <input type="button" value="8" onclick="document.calculadora.respuesta.value+='8'">
+                    <input type="button" value="9" onclick="document.calculadora.respuesta.value+='9'">
+                    <input type="button" value="+" onclick="document.calculadora.respuesta.value+='+'">
+                    <br>
+                    <input type="button" value="4" onclick="document.calculadora.respuesta.value+='4'">
+                    <input type="button" value="5" onclick="document.calculadora.respuesta.value+='5'">
+                    <input type="button" value="6" onclick="document.calculadora.respuesta.value+='6'">
+                    <input type="button" value="-" onclick="document.calculadora.respuesta.value+='-'">
+                    <br>
+                    <input type="button" value="1" onclick="document.calculadora.respuesta.value+='1'">
+                    <input type="button" value="2" onclick="document.calculadora.respuesta.value+='2'">
+                    <input type="button" value="3" onclick="document.calculadora.respuesta.value+='3'">
+                    <input type="button" value="x" onclick="document.calculadora.respuesta.value+='*'">
+                    <br>
+                    <input type="button" value="0" onclick="document.calculadora.respuesta.value+='0'">
+                   <!-- el input será tipo reset para limpiar el input text y no necesitamos el evento onclick -->
+                    <input type="reset" value="c">
+                    <!-- aqui ya NO se tiene que concatenar ahora se le asigna lo mismo del evento en el parentesis con la funcion eval() de javascript que evalúa un código JavaScript representado como una cadena de caracteres-->
+                    <input type="button" value="=" onclick="document.calculadora.respuesta.value=eval(document.calculadora.respuesta.value)">
+                    <input type="button" value="/" onclick="document.calculadora.respuesta.value+='/'">
+                </form>
+            </div>
+
+
+        </main>
+        <!-- fin contenido -->
+
+
+
+
+
+        <a class="top">
+            <i class="fa-solid fa-arrow-up fa-2xl"></i>
+        </a>
+    </div>
+    <footer>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. &copy;</p>
+    </footer>
+</body>
+
+</html>

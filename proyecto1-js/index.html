@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1 con js</title>
+
+    <!-- mi css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link id="theme" rel="stylesheet" href="assets/css/green.css">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <!-- slider cdn bxslider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- mi js -->
+    <script src="./assets/js/main.js"></script>
+
+    <!-- moment js plugin cdn de fecha para el post  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script> <!--libreria para tener integrados los metodos-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/locale/es.min.js"></script> <!--para usar los metodos-->
+</head>
+
+<body>
+    <div id="selector-theme">
+        <div id="to-green">
+            <i class="fa-solid fa-image fa-2xl green"></i>
+        </div>
+        <div id="to-red">
+            <i class="fa-solid fa-image fa-2xl red"></i>
+        </div>
+        <div id="to-blue">
+            <i class="fa-solid fa-image fa-2xl blue"></i>
+        </div>
+    </div>
+
+    <div id="global">
+        <!-- inicio cabecera -->
+        <header>
+            <div id="logo">
+                <h1>PROYECTO JS</h1>
+            </div>
+            
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="calculadora.html">CALCULADORA</a></li>
+                    <li><a href="reloj.html">RELOJ</a></li>
+                    <li><a href="#">JUEGO CHAPUZA</a></li>
+                    <li><a href="about.html">SOBRE MI</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- fin cabecera -->
+
+        <!-- inicio slider -->
+        <div id="slider">
+            <div class="galeria-slider">
+                <div><img class="img-slider" src="./assets/img/hojas.jpg" title="Funky roots"></div>
+                <div><img class="img-slider" src="./assets/img/rojo.jpg" title="The long and winding road"></div>
+                <div><img class="img-slider" src="./assets/img/cielo.jpg" title="Happy trees"></div>
+            </div>
+        </div>
+        <!-- fin slider -->
+
+        <div class="flex">
+
+        
+        <!-- inicio contneido -->
+        <main id="contenido">
+
+            
+
+                <section id="posts">
+                    <h2>Titulo del articulo</h2>
+                    <article class="post">
+                        <h3>Fecha de publicación</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum laborum ducimus corrupti, eos eaque nemo, harum, magnam ipsum assumenda perferendis rerum incidunt nihil iusto recusandae commodi unde ratione? ipsum dolor sit, amet consectetur adipisicing elit. Amet debitis necessitatibus libero quo,
+                            sed voluptatum aperiam ipsum vel corporis commodi vitae modi nulla quas! Dolore asperiores
+                            laudantium repellendus qui unde!
+                        </p>
+                        <a href="#" class="button-more">Leer más</a>
+                    </article>
+                </section>
+    
+                <section id="posts">
+                    <h2>Titulo del articulo</h2>
+                    <article class="post">
+                        <h3>Fecha de publicación</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum laborum ducimus corrupti, eos eaque nemo, harum, magnam ipsum assumenda perferendis rerum incidunt nihil iusto recusandae commodi unde ratione? ipsum dolor sit, amet consectetur adipisicing elit. Amet debitis necessitatibus libero quo,
+                            sed voluptatum aperiam ipsum vel corporis commodi vitae modi nulla quas! Dolore asperiores
+                            laudantium repellendus qui unde!
+                        </p>
+                        <a href="#" class="button-more">Leer más</a>
+                    </article>
+                </section>
+                
+            
+   
+        </main>
+        <!-- fin contenido -->
+        <!--inicio contenido lateral -->
+        <aside id="asidebar">
+            <div id="about">
+                <h4>¿Quién soy?</h4>
+                <img src="assets/img/caracol.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a vitae praesentium tempora voluptates quod.</p>
+            </div>
+
+            <div id="login">
+                <h4>Identificate</h4>
+                <form action="#">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    
+
+                    <label for="password">Contraseña:</label>
+                    <input type="password" name="password" id="password">
+                    
+
+                    <input type="submit" value="Entrar">
+                </form>
+            </div>
+        </aside>
+        <!-- fin contenido lateral -->
+    </div>
+
+        <a class="top">
+            <i class="fa-solid fa-arrow-up fa-2xl"></i>
+        </a>
+    </div>
+    <footer>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. &copy;</p>
+    </footer>
+</body>
+
+</html>
